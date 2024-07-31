@@ -1,11 +1,11 @@
 # Hi there, I'm Saileen Fernandes 👋
 
 ## 👩‍💻 About Me
-I’m a final year Computer Engineering student with a passion for software development and technology. I enjoy solving complex problems and am always eager to learn new things. 
+I’m a final year Computer Engineering student with a passion for software development and technology. I enjoy solving complex problems and am always eager to learn new things. I am very creative and love drawing digital art. I love History, video games, food and cats.
 
 ## 🔧 Skills
-- **Programming Languages:** Python, Java, C++, JavaScript, SQL
-- **Tools & Technologies:** Visual Studio Code, Git, AWS, MySQL, Docker, JIRA
+- **Programming Languages:** Python, Java, C/C++
+- **Tools & Technologies:** Visual Studio Code, Git, AWS, MySQL
 - **Web Development:** HTML, CSS, JavaScript
 
 ## 📂 Projects
