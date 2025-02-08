@@ -82,15 +82,18 @@ def about():
 @appy4.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
+        print("DEBUG: Contact form submitted!")  # Debugging
         name = request.form["name"]
         sender_email = request.form["email"]
         message_text = request.form["message"]
 
         send_email(name, sender_email, message_text)
 
+        print(f"DEBUG: Email sent from {name} ({sender_email})")  # Debugging
         return redirect("/")
     
     return render_template("contact.html")
+
 
 @appy4.route("/test-email")
 def test_email():
