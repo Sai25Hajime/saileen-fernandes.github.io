@@ -2,18 +2,23 @@ from flask import Flask, request, redirect, render_template
 import os
 import base64
 import pickle
-from google_auth_oauthlib.flow import InstalledAppFlow
+from google_auth_oauthlib.flow import Flow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from email.mime.text import MIMEText
 
 appy4 = Flask(__name__)
 
-# Load credentials and create a Gmail API service
-SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
-CLIENT_SECRET_FILE = "client_secret.json"
+# Load credentials from environment variables (GitHub Secrets)
+CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
+CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
+PROJECT_ID = os.getenv("GOOGLE_PROJECT_ID")
 
-service = None  # Fix: Do not authenticate on startup
+# OAuth 2.0 Configuration
+SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
+REDIRECT_URI = "http://localhost:5001/oauth2callback"  # Adjust if needed
+
+service = None  # Do not authenticate on startup
 
 def get_gmail_service():
     creds = None
@@ -25,12 +30,20 @@ def get_gmail_service():
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file(
-                CLIENT_SECRET_FILE, 
+            flow = Flow.from_client_config(
+                {
+                    "web": {
+                        "client_id": CLIENT_ID,
+                        "client_secret": CLIENT_SECRET,
+                        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                        "token_uri": "https://oauth2.googleapis.com/token",
+                    }
+                },
                 SCOPES,
             )
-            creds = flow.run_local_server(port=5001)  # Fix: Correct OAuth flow
-            
+            flow.redirect_uri = REDIRECT_URI
+            creds = flow.run_local_server(port=5001)
+        
         with open("token.pickle", "wb") as token:
             pickle.dump(creds, token)
     
@@ -39,7 +52,7 @@ def get_gmail_service():
 def send_email(name, sender_email, message_text):
     print(f"Debug: Sending email from {sender_email} with message: {message_text}")
     
-    service = get_gmail_service()  # Fix: Authenticate only when needed
+    service = get_gmail_service()  # Authenticate only when needed
     if service is None:
         print("Error: Gmail API service is not initialized. Email not sent.")
         return
