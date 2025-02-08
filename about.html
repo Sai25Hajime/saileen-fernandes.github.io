@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body style = "margin: 0 0 0; text-align: center">
+
+    <p id = "head_bar">
+
+        <a href = "{{url_for('index')}}">
+          <img src="{{ url_for('static', filename='css/images/logo.jpeg') }}" width="125" height="125" alt="Background">
+        </a>
+
+    </p>
+
+    <br><br>
+    <body>
+      <h1>About Us</h1>
+      <p>Welcome to our system. We aim to provide the best solutions for healthcare predictions and doctor recommendations.</p>
+      <p>Our mission is to leverage technology to make healthcare more accessible and efficient for everyone.</p>
+      <p>Feel free to explore our system and make the most out of our features.</p>
+    </body>
+</html>
