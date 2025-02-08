@@ -16,7 +16,7 @@ PROJECT_ID = os.getenv("GOOGLE_PROJECT_ID")
 
 # OAuth 2.0 Configuration
 SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
-REDIRECT_URI = "http://localhost:5001/oauth2callback"  # Adjust if needed
+REDIRECT_URI = "https://sai25hajime.github.io/saileen-fernandes.github.io/oauth2callback"  # Adjust if needed
 
 service = None  # Do not authenticate on startup
 
