@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Contact Us</h1>
     <p>If you have any questions or need further assistance, feel free to contact us through the form below:</p>
-    <form action="{{ url_for('contact') }}" method="post">
-      <label for="name">Name: <input type="text" id="name" name="name" required></label><br>
-      <label for="email">Email: <input type="email" id="email" name="email" required></label><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br>
-      <input type="submit" value="Send">
+
+    <form action="https://formsubmit.co/saileenf6@gmail.com" method="post">
+        <label for="name">Name: <input type="text" id="name" name="name" required></label><br>
+        <label for="email">Email: <input type="email" id="email" name="email" required></label><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+        <input type="submit" value="Send">
     </form>
-  </body>
+</body>
+</html>
