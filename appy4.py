@@ -94,7 +94,10 @@ def contact():
     
     return render_template("contact.html")
 
-
+@appy4.route("/privacy")
+def privacy():
+    return render_template("privacy-policy.html")
+    
 @appy4.route("/test-email")
 def test_email():
     send_email("Test User", "test@example.com", "This is a test email.")
