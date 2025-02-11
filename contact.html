@@ -25,32 +25,24 @@
     
     <p id="responseMessage" style="display: none; font-weight: bold;"></p>
 
+    <!-- Place the script here, right before </body> -->
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent normal form submission
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from refreshing the page
 
-            let formData = new FormData(this);
+            var formData = new FormData(this);
 
-            fetch("/contact", {
+            fetch("https://script.google.com/macros/s/AKfycby0f1voSnpVHscnejjPn5piXL_0sPzvJ5C3hi8aTSwjelB2Sh2UPuWget-B6xJaTRW-eA/exec", {
                 method: "POST",
                 body: formData
             })
-            .then(response => {
-                if (response.ok) {
-                    return response.text();
-                } else {
-                    throw new Error("Error submitting the form");
-                }
-            })
+            .then(response => response.text())
             .then(data => {
-                document.getElementById("responseMessage").innerText = "Email Sent Successfully!";
-                document.getElementById("responseMessage").style.display = "block";
-                document.getElementById("contactForm").reset();  // Clear form fields
+                document.getElementById("response-message").innerText = "Message sent successfully!";
+                document.getElementById("contact-form").reset(); // Clear form fields
             })
             .catch(error => {
-                document.getElementById("responseMessage").innerText = "Failed to send email. Please try again.";
-                document.getElementById("responseMessage").style.display = "block";
-                console.error("Error:", error);
+                document.getElementById("response-message").innerText = "Error sending message. Please try again.";
             });
         });
     </script>
