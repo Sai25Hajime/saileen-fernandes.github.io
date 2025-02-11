@@ -23,28 +23,34 @@
         <button type="submit">Send</button>
     </form>
     
-    <p id="responseMessage" style="display: none; font-weight: bold;"></p>
+    <p id="response-message" style="display: none; font-weight: bold;"></p>
 
-    <!-- Place the script here, right before </body> -->
+    <!-- JavaScript should be placed just before the closing </body> tag -->
     <script>
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form from refreshing the page
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page refresh
 
-            var formData = new FormData(this);
+    var formData = new FormData(this);
 
-            fetch("https://script.google.com/macros/s/AKfycby0f1voSnpVHscnejjPn5piXL_0sPzvJ5C3hi8aTSwjelB2Sh2UPuWget-B6xJaTRW-eA/exec", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("response-message").innerText = "Message sent successfully!";
-                document.getElementById("contact-form").reset(); // Clear form fields
-            })
-            .catch(error => {
-                document.getElementById("response-message").innerText = "Error sending message. Please try again.";
-            });
-        });
+    fetch("https://script.google.com/macros/s/AKfycby0f1voSnpVHscnejjPn5piXL_0sPzvJ5C3hi8aTSwjelB2Sh2UPuWget-B6xJaTRW-eA/exec", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        var responseMessage = document.getElementById("response-message");
+        responseMessage.innerText = "Message sent successfully!";
+        responseMessage.style.color = "green"; // Make it visually appealing
+        responseMessage.style.display = "block"; // Show the message
+        document.getElementById("contact-form").reset(); // Clear form fields
+    })
+    .catch(error => {
+        var responseMessage = document.getElementById("response-message");
+        responseMessage.innerText = "Error sending message. Please try again.";
+        responseMessage.style.color = "red";
+        responseMessage.style.display = "block"; // Show the error message
+    });
+});
     </script>
 </body>
 </html>
