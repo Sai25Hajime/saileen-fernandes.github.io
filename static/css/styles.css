@@ -37,6 +37,10 @@ nav a:hover {
     color:white;
 }
 
+nav a:click {
+    background-color: #f2cbee; /* Darker pink */
+}
+
 /* Main Section */
 section {
     text-align: center;
@@ -61,6 +65,10 @@ button {
 
 button:hover {
     background-color: #6a0dad; /* Darker pink */
+}
+
+button:click {
+    background-color: #9aa4e6; /* Darker pink */
 }
 
 /* Footer */
