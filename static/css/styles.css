@@ -81,3 +81,60 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Project Section Styling */
+.projects {
+    text-align: center;
+    padding: 50px;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    color: #4B0082; /* Dark purple for headings */
+    margin-bottom: 30px;
+}
+
+.project-box {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-box h3 {
+    font-size: 1.5rem;
+    color: #d1478d; /* Dark pink for project titles */
+}
+
+.project-box p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project-box a {
+    font-size: 1rem;
+    color: #ff69b4; /* Hot pink link */
+    text-decoration: none;
+    border: 2px solid #ff69b4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.project-box a:hover {
+    background-color: #d1478d;
+    color: white;
+    border-color: #d1478d;
+}
