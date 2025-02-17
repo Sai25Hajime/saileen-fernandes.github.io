@@ -37,7 +37,7 @@ nav a:hover {
     color:white;
 }
 
-nav a:click {
+nav a:active {
     background-color: #f2cbee; /* Darker pink */
 }
 
@@ -67,7 +67,7 @@ button:hover {
     background-color: #6a0dad; /* Darker pink */
 }
 
-button:click {
+button:active {
     background-color: #9aa4e6; /* Darker pink */
 }
 
