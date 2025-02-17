@@ -34,6 +34,7 @@ nav a {
 
 nav a:hover {
     background-color: #d1478d; /* Slightly darker pink */
+    color:white;
 }
 
 /* Main Section */
