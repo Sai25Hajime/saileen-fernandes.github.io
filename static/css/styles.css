@@ -84,6 +84,9 @@ footer {
 
 /* Project Section Styling */
 .projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     text-align: center;
     padding: 50px;
 }
@@ -92,10 +95,13 @@ footer {
     font-size: 2rem;
     color: #4B0082; /* Dark purple for headings */
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .project-box {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 30%;
     margin: 15px;
     padding: 20px;
