@@ -23,17 +23,18 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #d1478d;
     font-weight: 600;
     margin: 0 15px;
     padding: 8px 16px;
     border-radius: 20px;
-    background-color: #ff69b4; /* Hot pink */
+    background-color: white; /* Hot pink */
     transition: 0.3s ease-in-out;
 }
 
 nav a:hover {
     background-color: #d1478d; /* Slightly darker pink */
+    color: white;
 }
 
 /* Main Section */
@@ -43,7 +44,7 @@ section {
 }
 
 h1, h2 {
-    color: #d1478d; /* Dark pink for headings */
+    color: #1C1C3A; /* Dark pink for headings */
 }
 
 /* Buttons */
@@ -59,7 +60,7 @@ button {
 }
 
 button:hover {
-    background-color: #c43c77; /* Darker pink */
+    background-color: #6a0dad; /* Darker pink */
 }
 
 /* Footer */
