@@ -87,6 +87,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px; /* Adds spacing between the boxes */
     text-align: center;
     padding: 50px;
 }
@@ -99,10 +100,7 @@ footer {
 }
 
 .project-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30%;
+    flex: 1 1 30%; /* This allows the project boxes to grow/shrink and fill the available space */
     margin: 15px;
     padding: 20px;
     background-color: #fff;
@@ -111,6 +109,7 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s ease-in-out;
+    min-width: 280px; /* Ensures the boxes don't get too small on small screens */
 }
 
 .project-box:hover {
@@ -143,4 +142,12 @@ footer {
     background-color: #d1478d;
     color: white;
     border-color: #d1478d;
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 768px) {
+    .project-box {
+        flex: 1 1 100%; /* On smaller screens, each box will take 100% width */
+        margin: 10px 0;
+    }
 }
