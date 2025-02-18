@@ -9,8 +9,7 @@ I’m a final year Computer Engineering student with a passion for software deve
 - **Web Development:** HTML, CSS, JavaScript
 
 ## 📂 Projects
-- **[Project Title](https://github.com/yourusername/project-repo)**: Brief description of the project, technologies used, and key achievements.
-- **[Another Project](https://github.com/yourusername/another-project)**: Brief description of this project and what you accomplished.
+- Please refer to my repositories and my portfolio website.
 
 ## 🎓 Education
 - **BE in Computer Engineering** - St. Francis Institute of Technology (July 2021 – May 2025)
