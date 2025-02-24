@@ -186,7 +186,9 @@ footer {
     background-color: #333;
 }
 
-
+.dark-mode .project-box p {
+    color: white;
+}
 
 /* Responsive adjustment */
 @media screen and (max-width: 768px) {
