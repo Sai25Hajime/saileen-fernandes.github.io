@@ -144,6 +144,49 @@ footer {
     border-color: #d1478d;
 }
 
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode header {
+    background-color: #333;
+}
+
+.dark-mode nav a {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode nav a:hover {
+    background-color: #555;
+}
+
+.dark-mode .project-box {
+    background-color: #222;
+    border-color: #444;
+}
+
+.dark-mode .project-box h3 {
+    color: #ff69b4;
+}
+
+.dark-mode .project-box a {
+    color: #ff69b4;
+    border-color: #ff69b4;
+}
+
+.dark-mode .project-box a:hover {
+    background-color: #d1478d;
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #333;
+}
+
+
 /* Responsive adjustment */
 @media screen and (max-width: 768px) {
     .project-box {
