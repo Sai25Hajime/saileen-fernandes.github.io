@@ -186,7 +186,7 @@ footer {
     background-color: #333;
 }
 
-.dark-mode p {
+.dark-mode .project-box p {
     background-color: white;
 }
 
