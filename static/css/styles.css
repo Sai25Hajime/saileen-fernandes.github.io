@@ -187,9 +187,7 @@ footer {
 }
 
 .dark-mode .project-box p {
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 20px;
+    color: #e0e0e0;
 }
 
 /* Responsive adjustment */
