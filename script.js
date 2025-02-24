@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const questions = document.querySelectorAll(".faq-question");
-    const darkModeToggle = document.createElement("button");
+    const toggleButton = document.getElementById('theme-toggle');
 
     // Add Dark Mode Toggle Button
     darkModeToggle.textContent = "Toggle Dark Mode";
