@@ -51,6 +51,33 @@ h1, h2 {
     color: #4B0082; /* Dark pink for headings */
 }
 
+/* Light Mode Links */
+a {
+    color: #0000EE; /* Default blue */
+}
+
+a:hover {
+    color: #FF0000; /* Red */
+}
+
+a:visited {
+    color: #800080; /* Purple */
+}
+
+/* Dark Mode Links */
+.dark-mode a {
+    color: #8ab4f8; /* Light blue */
+}
+
+.dark-mode a:hover {
+    color: #ff7675; /* Soft red */
+}
+
+.dark-mode a:visited {
+    color: #a479d9; /* Soft purple */
+}
+
+
 /* Buttons */
 button {
     background-color: #ff69b4;
