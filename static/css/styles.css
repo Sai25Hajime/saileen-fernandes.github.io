@@ -197,6 +197,18 @@ footer {
     color: #b19cd9; /* Light pink or white to contrast with dark background */
 }
 
+.dark-mode a {
+    color: #62b6f9; /* Light blue */
+}
+
+.dark-mode a:hover {
+    color: #00b4d8; /* Cyan */
+}
+
+.dark-mode a:visited {
+    color: #b892ff; /* Light purple */
+}
+
 /* Responsive adjustment */
 @media screen and (max-width: 768px) {
     .project-box {
