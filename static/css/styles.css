@@ -189,9 +189,10 @@ footer {
 .dark-mode .project-box p {
     color: #e0e0e0;
 }
-.dark-mode h1, h2 {
-    color: #CBC3E3; /* Dark pink for headings */
+.dark-mode h1, .dark-mode h2 {
+    color: #ffb6c1; /* Light pink or white to contrast with dark background */
 }
+
 /* Responsive adjustment */
 @media screen and (max-width: 768px) {
     .project-box {
