@@ -229,11 +229,11 @@ footer {
 }
 
 .dark-mode a:hover {
-    color: #1ec5fc; /* Cyan */
+    color: #6edbff; /* Cyan */
 }
 
 .dark-mode a:visited {
-    color: #eb7fd3; /* Light purple */
+    color: #b19cd9; /* Light purple */
 }
 
 /* Responsive adjustment */
