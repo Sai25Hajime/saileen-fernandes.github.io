@@ -183,7 +183,7 @@ footer {
 
 .dark-mode nav a {
     background-color: #6a0dad;
-    color: white;
+    color: white !important;
 }
 
 .dark-mode nav a:hover {
