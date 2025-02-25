@@ -188,10 +188,12 @@ footer {
 
 .dark-mode nav a:hover {
     background-color: #8a2be2;
+    color: white;
 }
 
 .dark-mode nav a:active {
      background-color: #eb7fd3; /* Darker pink */
+    color: white;
 }
 
 .dark-mode .project-box {
