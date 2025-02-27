@@ -204,7 +204,8 @@ footer {
 /* Style the input fields */
 #contact-form input,
 #contact-form textarea {
-    width: 100%;
+    width: 80%;
+    max-width: 450px;
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -212,6 +213,12 @@ footer {
     font-size: 16px;
     background: #f9f9f9;
     transition: 0.3s ease-in-out;
+}
+
+/* Make textarea slightly larger than input fields */
+#contact-form textarea {
+    height: 120px; /* More space for messages */
+    resize: vertical; /* Allows resizing */
 }
 
 /* Add focus effect on inputs */
@@ -224,7 +231,8 @@ footer {
 
 /* Style the send button */
 #contact-form button {
-    width: 100%;
+    width: 50%;
+    max-width: 250px;
     padding: 12px;
     background: #d1478d;
     color: white;
