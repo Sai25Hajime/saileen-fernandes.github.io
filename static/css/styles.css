@@ -185,7 +185,7 @@ footer {
 
 /* Center the form and improve styling */
 #contact-form {
-    max-width: 500px;
+    max-width: 600px;
     margin: 30px auto;
     padding: 20px;
     background: #ffffff;
@@ -205,7 +205,7 @@ footer {
 /* Style the input fields */
 #contact-form input,
 #contact-form textarea {
-    width: 80%;
+    width: 100%;
     max-width: 450px;
     padding: 12px;
     margin-bottom: 15px;
