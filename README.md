@@ -3,6 +3,8 @@
 ## 👩‍💻 About Me
 I’m a final year Computer Engineering student with a passion for software development and technology. I enjoy solving complex problems and am always eager to learn new things. I am very creative and love drawing digital art. I love History, video games, food and cats.
 
+**Pronouns:** She/Her
+
 ## 🔧 Skills
 - **Programming Languages:** Python, C/C++
 - **Tools & Technologies:** Visual Studio Code, Git, AWS, MySQL
