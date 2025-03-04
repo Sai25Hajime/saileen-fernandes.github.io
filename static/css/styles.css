@@ -20,11 +20,11 @@ header {
 /* Navigation */
 nav {
     display: flex;
-    justify-content: center; /* Centers the navigation items */
-    align-items: center; /* Vertically centers the items */
-    gap: 15px; /* Adds space between nav items */
-    flex-wrap: wrap; /* Allows wrapping if needed, but keeps items inline */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevents wrapping */
     margin-top: 10px;
+    gap: 15px;
 }
 
 nav a {
@@ -35,8 +35,7 @@ nav a {
     border-radius: 20px;
     background-color: white;
     transition: 0.3s ease-in-out;
-    margin: 0 5px; /* Reduced horizontal margin */
-    white-space: nowrap; /* Prevents links from breaking into multiple lines */
+    white-space: nowrap; /* Keeps links on one line */
 }
 
 nav a:hover {
@@ -361,14 +360,14 @@ footer {
 
     /* Make navigation links stack instead of inline */
     nav {
-        flex-direction: row; /* Stack horizontally on small screens */
+        flex-direction: row; /* Ensure horizontal layout */
+        flex-wrap: nowrap;
     }
 
     nav a {
-        display: block;
-        margin: 10px 0; /* Add spacing between links */
-        width: 80%;
-        text-align: center;
+        display: inline-block; /* Prevents full-width blocks */
+        margin: 0 5px; /* Adds some spacing */
+        width: auto; /* Remove previous full-width setting */
     }
 
     /* Adjust header size for smaller screens */
