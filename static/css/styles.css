@@ -359,17 +359,19 @@ footer {
     }
 
     /* Make navigation links stack instead of inline */
-    nav {
+   nav {
         flex-direction: row; /* Ensure horizontal layout */
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     nav a {
-        display: inline-block; /* Prevents full-width blocks */
-        margin: 0 5px; /* Adds some spacing */
-        width: auto; /* Remove previous full-width setting */
+        display: inline-block; /* Changed from block to inline-block */
+        margin: 5px; /* Reduced margin */
+        width: auto; /* Remove fixed width */
+        text-align: center;
     }
-
     /* Adjust header size for smaller screens */
     header {
         padding: 1rem;
