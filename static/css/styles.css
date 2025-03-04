@@ -20,12 +20,14 @@ header {
 /* Navigation */
 nav {
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
     align-items: center;
-    gap: 15px; /* Adds space between buttons */
-    flex-wrap: wrap; /* Ensures they wrap properly on smaller screens */
+    gap: 15px;
+    flex-wrap: nowrap; /* Forces buttons to stay in a row */
     margin-top: 10px;
+    overflow-x: auto; /* Allows scrolling if needed */
 }
+
 
 nav a {
     text-decoration: none;
