@@ -362,7 +362,7 @@ footer {
 
     /* Make navigation links stack instead of inline */
     nav {
-        flex-direction: column; /* Stack vertically on small screens */
+        flex-direction: row; /* Stack horizontally on small screens */
     }
 
     nav a {
