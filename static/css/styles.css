@@ -347,3 +347,40 @@ footer {
         margin: 10px 0;
     }
 }
+
+    /* Adjust general section padding */
+    section {
+        padding: 30px;
+    }
+
+    /* Make navigation links stack instead of inline */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0; /* Add spacing between links */
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Adjust header size for smaller screens */
+    header {
+        padding: 1rem;
+    }
+
+    /* Ensure contact form fits smaller screens */
+    #contact-form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    /* Adjust button width for better tapping experience */
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
