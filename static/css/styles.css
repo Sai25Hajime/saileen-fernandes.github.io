@@ -20,23 +20,23 @@ header {
 /* Navigation */
 nav {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: nowrap; /* Forces buttons to stay in a row */
+    justify-content: center; /* Centers the navigation items */
+    align-items: center; /* Vertically centers the items */
+    gap: 15px; /* Adds space between nav items */
+    flex-wrap: wrap; /* Allows wrapping if needed, but keeps items inline */
     margin-top: 10px;
-    overflow-x: auto; /* Allows scrolling if needed */
 }
-
 
 nav a {
     text-decoration: none;
     color: #d1478d;
     font-weight: 600;
-    margin: 0 15px;
     padding: 8px 16px;
     border-radius: 20px;
-    background-color: white; /* Hot pink */
+    background-color: white;
     transition: 0.3s ease-in-out;
+    margin: 0 5px; /* Reduced horizontal margin */
+    white-space: nowrap; /* Prevents links from breaking into multiple lines */
 }
 
 nav a:hover {
