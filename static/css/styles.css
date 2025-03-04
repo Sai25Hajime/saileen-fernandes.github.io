@@ -179,20 +179,27 @@ footer {
     padding: 0;
 }
 
-#core-values {
-    text-align: center; /* Keeps section title centered */
-}
-
-#core-values ul {
-    list-style-position: inside; /* Ensures bullets stay with text */
-    display: inline-block; /* Makes the list respect centering */
-    text-align: left; /* Keeps text aligned properly */
-    padding: 0;
-}
-
 #skills {
     text-align: center; /* Keeps section title centered */
 }
+
+#core-values {
+    text-align: center; /* Centers the section title */
+}
+
+#core-values ul {
+    display: inline-block; /* Allows the list to be centered */
+    text-align: left; /* Keeps text properly aligned */
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+}
+
+#core-values ul li::before {
+    content: "• "; /* Adds custom bullet */
+    color: #333; /* Bullet color */
+    font-weight: bold;
+}
+
 
 /* Center the form and improve styling */
 #contact-form {
