@@ -355,7 +355,7 @@ footer {
 
     /* Adjust general section padding */
     section {
-        padding: 30px;
+        padding: 20px;
     }
 
     /* Make navigation links stack instead of inline */
@@ -379,9 +379,30 @@ footer {
 
     /* Ensure contact form fits smaller screens */
     #contact-form {
-        max-width: 100%;
-        padding: 15px;
+        max-width: 95%; /* Make form nearly full width */
+        margin: 20px auto; /* Reduced vertical margin */
+        padding: 15px; /* Slightly reduced padding */
     }
+
+    #contact-form input,
+    #contact-form textarea {
+        max-width: 100%; /* Full width of the form */
+        width: 100%;
+        padding: 10px; /* Slightly smaller padding */
+        font-size: 14px; /* Reduced font size for mobile */
+    }
+
+    #contact-form textarea {
+        height: 100px; /* Slightly shorter textarea */
+    }
+
+    #contact-form button {
+        width: 100%; /* Full width button */
+        max-width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
 
     /* Adjust button width for better tapping experience */
     button {
