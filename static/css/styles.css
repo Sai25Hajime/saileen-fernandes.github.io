@@ -19,6 +19,11 @@ header {
 
 /* Navigation */
 nav {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    gap: 15px; /* Adds space between buttons */
+    flex-wrap: wrap; /* Ensures they wrap properly on smaller screens */
     margin-top: 10px;
 }
 
@@ -355,9 +360,7 @@ footer {
 
     /* Make navigation links stack instead of inline */
     nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack vertically on small screens */
     }
 
     nav a {
