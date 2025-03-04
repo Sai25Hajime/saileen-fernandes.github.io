@@ -179,11 +179,11 @@ footer {
     padding: 0;
 }
 
-#core values {
+#core-values {
     text-align: center; /* Keeps section title centered */
 }
 
-#core values ul {
+#core-values ul {
     list-style-position: inside; /* Ensures bullets stay with text */
     display: inline-block; /* Makes the list respect centering */
     text-align: left; /* Keeps text aligned properly */
