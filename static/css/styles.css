@@ -387,7 +387,7 @@ footer {
     #contact-form input,
     #contact-form textarea {
         max-width: 100%; /* Full width of the form */
-        width: 100%;
+        width: 80%;
         padding: 10px; /* Slightly smaller padding */
         font-size: 14px; /* Reduced font size for mobile */
     }
@@ -397,7 +397,7 @@ footer {
     }
 
     #contact-form button {
-        width: 100%; /* Full width button */
+        width: 80%; /* Full width button */
         max-width: 100%;
         padding: 10px;
         font-size: 16px;
