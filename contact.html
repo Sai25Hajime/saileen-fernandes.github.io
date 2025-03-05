@@ -6,32 +6,29 @@
     <link rel="stylesheet" href="static/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-    <body style = "margin: 0 0 0; text-align: center">
+<body style="margin: 0 0 0; text-align: center">
 
-    <p id = "head_bar">
-
+    <p id="head_bar">
         <a href="theodore-fairin.html">
-          <img src="static/images/Theodore Pixel Art.jpeg" width="125" height="125" alt="Theodore Fairin">
+            <img src="static/images/Theodore Pixel Art.jpeg" width="125" height="125" alt="Theodore Fairin">
         </a>
-
     </p>
 
     <br><br>
-    <body>
 
     <header>
         <h1>Contact Us</h1>
         <nav>
             <ul>
-                <a href="index.html">Index</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="terms.html">Terms and Conditions</a>
-                <a href="questions-answers.html">Q&A</a>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="questions-answers.html">Q&A</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <p>If you have any questions or need further assistance, feel free to contact us through the form below:</p>
 
     <form id="contact-form">
@@ -46,42 +43,45 @@
 
         <button type="submit">Send</button>
     </form>
-    
+
     <p id="response-message" style="display: none; font-weight: bold;"></p>
 
-    <!-- JavaScript should be placed just before the closing </body> tag -->
     <script>
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent page refresh
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents page reload
 
-    var formData = new FormData(this);
+            var formData = new FormData(this);
 
-    fetch("https://script.google.com/macros/s/AKfycby0f1voSnpVHscnejjPn5piXL_0sPzvJ5C3hi8aTSwjelB2Sh2UPuWget-B6xJaTRW-eA/exec", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        var responseMessage = document.getElementById("response-message");
-        responseMessage.innerText = "Message sent successfully!";
-        responseMessage.style.color = "green"; // Make it visually appealing
-        responseMessage.style.display = "block"; // Show the message
-        document.getElementById("contact-form").reset(); // Clear form fields
-    })
-    .catch(error => {
-        var responseMessage = document.getElementById("response-message");
-        responseMessage.innerText = "Error sending message. Please try again.";
-        responseMessage.style.color = "red";
-        responseMessage.style.display = "block"; // Show the error message
-    });
-});
+            fetch("https://script.google.com/macros/s/YOUR_DEPLOYED_SCRIPT_URL/exec", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                var responseMessage = document.getElementById("response-message");
+                if (data.includes("Success")) {
+                    responseMessage.innerText = "Message sent successfully!";
+                    responseMessage.style.color = "green";
+                    document.getElementById("contact-form").reset(); // Clear form fields
+                } else {
+                    responseMessage.innerText = "Error sending message. Please try again.";
+                    responseMessage.style.color = "red";
+                }
+                responseMessage.style.display = "block";
+            })
+            .catch(error => {
+                var responseMessage = document.getElementById("response-message");
+                responseMessage.innerText = "Network error. Please try again.";
+                responseMessage.style.color = "red";
+                responseMessage.style.display = "block";
+            });
+        });
     </script>
+
     <footer>
         <p>&copy; 2025 Saileen Fernandes</p>
-    </footer>
-    <footer>
         <a href="privacy.html">Privacy Policy</a>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 </html>
