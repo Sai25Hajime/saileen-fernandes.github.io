@@ -22,7 +22,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap; /* Prevents wrapping */
+    flex-wrap: wrap; /* Allow wrapping if needed */
     margin-top: 10px;
     gap: 15px;
 }
@@ -36,6 +36,7 @@ nav a {
     background-color: white;
     transition: 0.3s ease-in-out;
     white-space: nowrap; /* Keeps links on one line */
+    display: inline-block; /* Ensures proper inline behavior */
 }
 
 nav a:hover {
