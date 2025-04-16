@@ -17,7 +17,7 @@ I’m a final year Computer Engineering student with a passion for software deve
 - Automatic Parking Management System
 - Natural Disaster Alert
 
-Please refer to my repositories and my portfolio website.
+Please refer to my repositories and my portfolio website for more details.
 
 ## 🎓 Education
 - **BE in Computer Engineering** - St. Francis Institute of Technology (July 2021 – May 2025)
