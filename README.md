@@ -3,6 +3,7 @@
 ## 👩‍💻 About Me
 I’m a final year Computer Engineering student with a passion for software development and technology. I enjoy solving complex problems and am always eager to learn new things. I am very creative and love drawing digital art. I love History, video games, food and cats.
 
+**Gender:** Female
 **Pronouns:** She/Her
 
 ## 🔧 Skills
@@ -25,8 +26,7 @@ Please refer to my repositories and my portfolio website for more details on the
 - **Secondary School Education (SSC)** - Sardar Vallabhai Patel Vidyalaya (June 2009 – March 2019)
 
 ## 🏆 Certifications
-- **Introduction to Cloud Computing**
-- **Web Development**
+[**List of Certifications**](https://drive.google.com/drive/folders/1WM0Efm76nNKQgckjcBcR9ExK-X1JuWQJ?usp=sharing)
 
 ## 📫 Contact Me
 - **Email:** saileenf6@gmail.com
