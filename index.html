@@ -1,107 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saileen Fernandes' Portfolio - Contact me and learn more about my work.">
-    <meta name="author" content="Saileen Fernandes">
-    <meta name="google-site-verification" content="kmVAQYFOPwcrWgPPDZxK4PKsFajjadbrKK0uUcUKmkM" />
-    <title>My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saileen Fernandes' Portfolio - Contact me and learn more about my work." />
+  <meta name="author" content="Saileen Fernandes" />
+  <meta name="google-site-verification" content="kmVAQYFOPwcrWgPPDZxK4PKsFajjadbrKK0uUcUKmkM" />
+  <title>Saileen Fernandes | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/styles.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    nav {
+      background: #222;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    footer {
+      margin-top: 30px;
+      background: #f0f0f0;
+      padding: 10px;
+    }
+
+    .project-box {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 8px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+  </style>
 </head>
-    <body style = "margin: 0 0 0; text-align: center">
 
-    <p id = "head_bar">
+<body>
 
-        <a href="theodore-fairin.html">
-          <img src="static/images/mountains.jpg" width="125" height="125" alt="Mountains">
-        </a>
+  <!-- Logo -->
+  <p id="head_bar">
+    <a href="#">
+      <img src="static/images/mountains.jpg" width="125" height="125" alt="Mountains" />
+    </a>
+  </p>
 
+  <!-- Header -->
+  <header>
+    <h1>Saileen Fernandes</h1>
+    <p>Computer Engineer | Web Developer | AI Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="#about-app">About App</a>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Welcome to my Portfolio!</h2>
+    <p>
+      I am a final-year Computer Engineering student passionate about Web Development, Artificial Intelligence, and Software Engineering. I’ve completed internships and worked on projects in full-stack and AI domains.
     </p>
+  </section>
 
-    <br><br>
-    <body>
-    <header>
-        <h1>Saileen Fernandes</h1>
-        <p>Computer Engineer | Web Developer | AI Enthusiast</p>
-        <nav>
-            <ul>
-                <a href="index.html">Index</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="terms.html">Terms and Conditions</a>
-                <a href="questions-answers.html">Q&A</a>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>Welcome to my Portfolio!</h2>
-        <p> I am a final-year Computer Engineering student passionate about Web Development, Artificial Intelligence, and Software Engineering. 
-    Over the past four years, I have worked on multiple projects, completed three internships, and gained hands-on experience in the AI and full-stack development fields. 
-    I enjoy solving problems, building applications, and continuously learning new technologies. More information is in the 'About' section of the portfolio website by clicking the corresponding button above.</p>
-    </section>
-    
-    <section class="projects">
-        <h2>My Projects</h2>
-        <div class="project-box">
-            <h3>Cardia: AI Diabetes and Heart Disease Management System</h3>
-            <p>Placeholder. Project Currently in Progress. Will be updated later.</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-box">
-            <h3>AI Diagnosis and Doctor Recommendation System</h3>
-            <p>This project is about the preduction module. Users can input values and see their prediction and they will get a list of recommended doctors. It's for diabetes.
-            <hr><b>Languages Used:</b> Python, HTML, CSS, JavaScript. 
-            <hr><b>Technologies Used:</b> Flask </p>
-            <a href="https://github.com/Sai25Hajime/AI-Diagnosis-and-Doctor-Recommendation-System" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-box">
-            <h3>Driver Drowsiness Detection System</h3>
-            <p>This project measures the state the driver is in. It shows whether the driver is active, drowsy or sleepy using the shape detector, if you are drowsy or asleep, an alert will sound waking you up.
-            <hr><b>Languages Used:</b> Python. 
-            <hr><b>Technologies Used:</b> Flask, OpenCV, 68 Shape Detector. </p>
-            
-            <a href="https://github.com/Sai25Hajime/Driver-Drowsiness-Detection-System" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-box">
-            <h3>Natural Disaster Alert</h3>
-            <p>A Java-based application designed to provide real-time alerts for natural disasters such as earthquakes, floods, and storms. It helps users stay informed by notifying them about potential hazards, ensuring timely action and safety.
-            <hr><b>Languages Used:</b> Java. 
-            <hr><b>Technologies Used:</b> Apache NetBeans.</p>
-            <a href="https://github.com/Sai25Hajime/Natural-Disaster-Alert" target="_blank">View on GitHub</a>
-        </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Web Development</li>
-            <li>Machine Learning Basics</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><b>Email:</b> saileenf6@gmail.com</p>
-        <p><b>GitHub:</b> <a href="https://github.com/Sai25Hajime">Sai25Hajime</a></p>
-        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/saileen-fernandes-553a032b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Saileen Fernandes</a></p>
-        <p><b>Twitter/X:</b> <a href="https://x.com/SaileenFernCats">SaileenFernCats</a></p>
-    </section>
-    <section id="about-app">
-        <h2>About This App</h2>
-        <p>This is a simple contact form that allows users to send messages securely using Google Apps Scripts.</p>
-        <p>The app ensures user data privacy and follows Google’s security guidelines.</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Saileen Fernandes</p>
-    </footer>
-    <footer>
-        <a href="privacy.html">Privacy Policy</a>
-    </footer>
-    <script src="script.js"></script>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-box">
+      <h3>Cardia: AI Diabetes and Heart Disease Management System</h3>
+      <p>Placeholder. Project Currently in Progress. Will be updated later.</p>
+    </div>
+
+    <div class="project-box">
+      <h3>AI Diagnosis and Doctor Recommendation System</h3>
+      <p>
+        Input values and get a prediction plus doctor recommendations for diabetes.
+        <br><b>Languages:</b> Python, HTML, CSS, JS
+        <br><b>Tech:</b> Flask
+      </p>
+      <a href="https://github.com/Sai25Hajime/AI-Diagnosis-and-Doctor-Recommendation-System" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Driver Drowsiness Detection System</h3>
+      <p>
+        Detects driver state (awake/drowsy/sleepy) using face shape tracking and sounds alerts.
+        <br><b>Languages:</b> Python
+        <br><b>Tech:</b> Flask, OpenCV, 68 Shape Detector
+      </p>
+      <a href="https://github.com/Sai25Hajime/Driver-Drowsiness-Detection-System" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Natural Disaster Alert</h3>
+      <p>
+        Real-time alert app for earthquakes, floods, storms, etc.
+        <br><b>Languages:</b> Java
+        <br><b>Tech:</b> NetBeans
+      </p>
+      <a href="https://github.com/Sai25Hajime/Natural-Disaster-Alert" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Web Development</li>
+      <li>Machine Learning Basics</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><b>Email:</b> saileenf6@gmail.com</p>
+    <p><b>GitHub:</b> <a href="https://github.com/Sai25Hajime" target="_blank">Sai25Hajime</a></p>
+    <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/saileen-fernandes-553a032b3" target="_blank">Saileen Fernandes</a></p>
+    <p><b>Twitter/X:</b> <a href="https://x.com/SaileenFernCats" target="_blank">@SaileenFernCats</a></p>
+  </section>
+
+  <!-- About App -->
+  <section id="about-app">
+    <h2>About This App</h2>
+    <p>This is a simple contact form that allows users to send messages securely using Google Apps Scripts.</p>
+    <p>The app ensures user data privacy and follows Google’s security guidelines.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Saileen Fernandes</p>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+
 </body>
 </html>
