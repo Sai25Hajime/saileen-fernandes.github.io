@@ -213,13 +213,16 @@ footer {
 }
 
 .skill-card {
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #f9d5ec, #f7a8d8); /* soft pink gradient */
   padding: 10px 20px;
   border-radius: 25px;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
+  color: #6a0572; /* dark purple text */
+  box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.2); /* soft pink shadow */
 }
+
 #core-values {
     text-align: center; /* Centers the section title */
 }
