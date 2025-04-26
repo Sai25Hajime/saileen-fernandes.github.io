@@ -368,8 +368,8 @@ footer {
 }
 
 .dark-mode .project-box a {
-    color: #ff69b4; /* Purple */
-    border-color: #ff69b4;
+    color: white; /* white */
+    border-color: white;
 }
 
 .dark-mode .project-box a:hover {
