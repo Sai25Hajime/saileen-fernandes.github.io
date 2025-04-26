@@ -175,6 +175,24 @@ footer {
   background-color: #d1478d;
 }
 
+.project-description,
+.tech-stack {
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.custom-hr {
+    border: none;
+    border-top: 2px solid black;
+    margin: 10px 0;
+}
+
+.tech-stack {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
 /* Make it responsive */
 @media screen and (max-width: 768px) {
   .projects-container {
