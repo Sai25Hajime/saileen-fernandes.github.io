@@ -367,21 +367,11 @@ footer {
     color: #ff69b4;
 }
 
-/*.dark-mode .project-box a {
+.dark-mode .project-box a {
     color: white; /* white */
     border-color: white;
-}*/
-
-.dark mode .project-box a {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #cb51ed;
-  color: white;
-  text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
 }
+
 
 .dark-mode .project-box a:hover {
     background-color: #d1478d;
