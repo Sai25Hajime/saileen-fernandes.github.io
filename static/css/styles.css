@@ -213,6 +213,18 @@ footer {
 }
 
 .skill-card {
+  background: linear-gradient(135deg, #6a0572, #4B0082); /* dark purple gradient */
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: #f7e7f5; /* very light pink/almost white text */
+  box-shadow: 0px 4px 8px rgba(106, 5, 114, 0.3); /* purple shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .skill-card {
   background: linear-gradient(135deg, #f9d5ec, #f7a8d8); /* soft pink gradient */
   padding: 10px 20px;
   border-radius: 25px;
@@ -222,6 +234,14 @@ footer {
   color: #6a0572; /* dark purple text */
   box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.2); /* soft pink shadow */
 }
+
+.dark mode .skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 
 #core-values {
     text-align: center; /* Centers the section title */
