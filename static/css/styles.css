@@ -121,49 +121,70 @@ footer {
 
 /* Project Section Styling */
 #projects {
-  display: grid; 
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a responsive grid with columns of 300px width */
-  gap: 20px; /* Adds space between grid items */
-  justify-content: center; /* Center the grid */
+  text-align: center;
+  padding: 50px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for desktop */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .project-box {
-  width: 100%; /* Make the box take full width of its grid column */
-  height: 300px; /* Fixed height to maintain square shape */
-  border: 2px solid #000; /* Border around the boxes */
-  padding: 10px; /* Padding inside the box */
-  box-sizing: border-box; /* Ensure padding does not affect width/height */
+  background-color: white;
+  border: 2px solid #ffb6c1; /* Pink border */
+  border-radius: 10px;
+  padding: 20px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(209, 71, 141, 0.3);
 }
+
 .project-box h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  color: #d1478d;
+  margin-top: 0;
 }
 
 .project-box p {
-  flex-grow: 1; /* Allow the paragraph to grow and fill the space if necessary */
+  flex-grow: 1;
+  color: #333;
 }
 
 .project-box a {
-  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ffb6c1;
+  color: white;
   text-decoration: none;
-  color: #0073e6;
+  border-radius: 20px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .project-box a:hover {
-    background-color: #d1478d;
-    color: white;
-    border-color: #d1478d;
+  background-color: #d1478d;
+}
+
+/* Make it responsive */
+@media screen and (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+  
+  .project-box {
+    height: auto;
+    min-height: 250px;
+  }
 }
 
 #skills ul {
