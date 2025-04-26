@@ -31,8 +31,8 @@ Please refer to my repositories and my portfolio website for more details on the
 - **Higher Secondary Education (HSC)** - Nirmala Junior College of Commerce and Science (June 2019 – May 2021)
 - **Secondary School Education (SSC)** - Sardar Vallabhai Patel Vidyalaya (June 2009 – March 2019)
 
-## 🏆 Certifications
-[**List of Certifications**](https://drive.google.com/drive/folders/1WM0Efm76nNKQgckjcBcR9ExK-X1JuWQJ?usp=sharing)
+## 🏆 Certificates
+[**List of Certificates**](https://drive.google.com/drive/folders/1WM0Efm76nNKQgckjcBcR9ExK-X1JuWQJ?usp=sharing)
 
 ## 📫 Contact Me
 - **Email:** saileenf6@gmail.com
