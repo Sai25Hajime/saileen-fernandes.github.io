@@ -205,17 +205,21 @@ footer {
   }
 }
 
-#skills ul {
-    list-style-position: inside; /* Ensures bullets stay with text */
-    display: inline-block; /* Makes the list respect centering */
-    text-align: left; /* Keeps text aligned properly */
-    padding: 0;
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-#skills {
-    text-align: center; /* Keeps section title centered */
+.skill-card {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
 }
-
 #core-values {
     text-align: center; /* Centers the section title */
 }
