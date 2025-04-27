@@ -138,7 +138,7 @@ footer {
   border: 2px solid #ffb6c1; /* Pink border */
   border-radius: 10px;
   padding: 20px;
-  height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -249,6 +249,14 @@ footer {
 .dark-mode .project-box .github-button:visited {
   color: #b19cd9 !important;; /* Light purple for visited in dark mode */
 }
+
+.project-box .render-button,
+.project-box .github-button {
+  display: block;
+  width: 80%; /* Make buttons wider */
+  margin: 10px auto; /* Center them and add vertical space */
+}
+
 /* Make it responsive */
 @media screen and (max-width: 768px) {
   .projects-container {
@@ -482,6 +490,8 @@ footer {
     .project-box {
         flex: 1 1 100%; /* On smaller screens, each box will take 100% width */
         margin: 10px 0;
+        height: auto; /* Allow height to adjust based on content */
+        min-height: 300px; /* Ensure minimum height */
     }
 }
 
