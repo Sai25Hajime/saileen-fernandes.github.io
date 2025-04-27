@@ -193,6 +193,23 @@ footer {
     margin-top: 5px;
 }
 
+/* Render Link */
+.render-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4CAF50; /* Fresh Green */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.render-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
 /* Make it responsive */
 @media screen and (max-width: 768px) {
   .projects-container {
