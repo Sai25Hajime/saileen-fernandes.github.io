@@ -257,6 +257,16 @@ footer {
   margin: 10px auto; /* Center them and add vertical space */
 }
 
+@media screen and (max-width: 768px) {
+    .project-box .render-button,
+    .project-box .github-button {
+        width: 80%;
+        margin: 8px auto;
+        display: block;
+        padding: 10px;
+    }
+}
+
 /* Make it responsive */
 @media screen and (max-width: 768px) {
   .projects-container {
