@@ -194,11 +194,11 @@ footer {
 }
 
 /* Render Link */
-.render-button {
+.project-box .render-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #4caf50; /* Fresh Green */
-  color: white;
+  background-color: #4caf50 !important; /* Fresh Green */
+  color: white !important;
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
@@ -206,16 +206,20 @@ footer {
   margin-top: 20px;
 }
 
-.render-button:hover {
+.project-box .render-button:hover {
   background-color: #45a049; /* Slightly darker green on hover */
 }
 
+.project-box .render-button:visited {
+  color: white !important;
+}
+
 /* Add new GitHub button styles */
-.github-button {
+.project-box .github-button {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #ffb6c1; /* Light pink */
-  color: white;
+  background-color: #ffb6c1 !important; /* Light pink */
+  color: white !important;
   text-decoration: none;
   border-radius: 20px;
   font-weight: bold;
@@ -223,27 +227,27 @@ footer {
   margin-top: 10px;
 }
 
-.github-button:hover {
-  background-color: #d1478d; /* Darker pink on hover */
+.project-box .github-button:hover {
+  background-color: #d1478d !important;; /* Darker pink on hover */
 }
 
 /* For visited states */
-.github-button:visited {
-  color: #800080; /* Purple for visited */
+.project-box .github-button:visited {
+  color: #800080 !important;; /* Purple for visited */
 }
 
 /* Dark mode adjustments */
-.dark-mode .github-button {
-  background-color: #6a0dad; /* Dark purple in dark mode */
-  color: white;
+.dark-mode .project-box .github-button {
+  background-color: #6a0dad !important;; /* Dark purple in dark mode */
+  color: white !important;;
 }
 
-.dark-mode .github-button:hover {
-  background-color: #8a2be2; /* Lighter purple on hover in dark mode */
+.dark-mode .project-box .github-button:hover {
+  background-color: #8a2be2 !important;; /* Lighter purple on hover in dark mode */
 }
 
-.dark-mode .github-button:visited {
-  color: #b19cd9; /* Light purple for visited in dark mode */
+.dark-mode .project-box .github-button:visited {
+  color: #b19cd9 !important;; /* Light purple for visited in dark mode */
 }
 /* Make it responsive */
 @media screen and (max-width: 768px) {
@@ -457,6 +461,20 @@ footer {
     border: none;
     border-top: 2px solid white;
     margin: 10px 0;
+}
+
+/* For dark mode */
+.dark-mode .project-box .render-button {
+  background-color: #2e7d32 !important; /* Darker green in dark mode */
+  color: white !important;
+}
+
+.dark-mode .project-box .render-button:hover {
+  background-color: #388e3c !important; /* Slightly lighter green in dark mode */
+}
+
+.dark-mode .project-box .render-button:visited {
+  color: white !important;
 }
 
 /* Responsive adjustment */
