@@ -210,6 +210,41 @@ footer {
   background-color: #45a049; /* Slightly darker green on hover */
 }
 
+/* Add new GitHub button styles */
+.github-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ffb6c1; /* Light pink */
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.github-button:hover {
+  background-color: #d1478d; /* Darker pink on hover */
+}
+
+/* For visited states */
+.github-button:visited {
+  color: #800080; /* Purple for visited */
+}
+
+/* Dark mode adjustments */
+.dark-mode .github-button {
+  background-color: #6a0dad; /* Dark purple in dark mode */
+  color: white;
+}
+
+.dark-mode .github-button:hover {
+  background-color: #8a2be2; /* Lighter purple on hover in dark mode */
+}
+
+.dark-mode .github-button:visited {
+  color: #b19cd9; /* Light purple for visited in dark mode */
+}
 /* Make it responsive */
 @media screen and (max-width: 768px) {
   .projects-container {
