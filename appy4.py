@@ -91,6 +91,9 @@ def contact():
     
     return render_template("contact.html")
 
+@app.route("/questions-answers")
+def questions_answers():
+    return render_template("questions-answers.html")
     
 @appy4.route("/test-email")
 def test_email():
