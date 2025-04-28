@@ -75,9 +75,6 @@ def send_email(name, sender_email, message_text):
 def index():
     return render_template("index.html")
 
-@appy4.route("/about")
-def about():
-    return render_template("about.html")
 
 @appy4.route("/contact", methods=["GET", "POST"])
 def contact():
@@ -94,13 +91,6 @@ def contact():
     
     return render_template("contact.html")
 
-@appy4.route("/privacy")
-def privacy():
-    return render_template("privacy.html")
-
-@appy4.route("/terms")
-def privacy():
-    return render_template("terms.html")
     
 @appy4.route("/test-email")
 def test_email():
