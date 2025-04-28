@@ -3,17 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="static/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Contact Us</h1>
+<body style="margin: 0 0 0; text-align: center">
+
+    <p id="head_bar">
+            <img src="static/images/mountains.jpg" width="125" height="125" alt="Mountains">
+    </p>
+
+    <br><br>
+
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+                <a href="index.html">Index</a>
+                <a href="questions-answers.html">Q&A</a>
+                <a href="#about-app">About App</a>
+        </nav>
+    </header>
+
     <p>If you have any questions or need further assistance, feel free to contact us through the form below:</p>
-    <form action="{{ url_for('contact') }}" method="post">
-      <label for="name">Name: <input type="text" id="name" name="name" required></label><br>
-      <label for="email">Email: <input type="email" id="email" name="email" required></label><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br>
-      <input type="submit" value="Send">
+
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <button type="submit">Send</button>
     </form>
-  </body>
+
+
+
+    <p id="response-message" style="display: none; font-weight: bold;"></p>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents page reload
+
+            var formData = new FormData(this);
+
+            fetch("https://script.google.com/macros/s/AKfycbzM9NVf3WXvGElHgrzEXEm-QxwFLVN8q_QJejVsDDMJDtKjV_KTnT0vRdtDTjDIEPkP1A/exec", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                var responseMessage = document.getElementById("response-message");
+                if (data.includes("Success")) {
+                    responseMessage.innerText = "Message sent successfully!";
+                    responseMessage.style.color = "green";
+                    document.getElementById("contact-form").reset(); // Clear form fields
+                } else {
+                    responseMessage.innerText = "Error sending message. Please try again.";
+                    responseMessage.style.color = "red";
+                }
+                responseMessage.style.display = "block";
+            })
+            .catch(error => {
+                var responseMessage = document.getElementById("response-message");
+                responseMessage.innerText = "Network error. Please try again.";
+                responseMessage.style.color = "red";
+                responseMessage.style.display = "block";
+            });
+        });
+    </script>
+
+<!-- About App -->
+  <section id="about-app">
+    <h2>About This Contact Form</h2>
+    <p>This is a simple contact form that allows users to send messages securely using Google Apps Scripts.</p>
+    <p>The app ensures user data privacy and follows Google’s security guidelines.</p>
+  </section>
+
+    <footer>
+        <p>&copy; 2025 Saileen Fernandes</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
