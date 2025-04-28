@@ -76,7 +76,7 @@ def index():
     return render_template("index.html")
 
 
-@appy4.route("/contact", methods=["GET", "POST"])
+@appy4.route("/contact.html", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
         print("DEBUG: Contact form submitted!")  # Debugging
@@ -91,7 +91,7 @@ def contact():
     
     return render_template("contact.html")
 
-@app.route("/questions-answers")
+@app.route("/questions-answers.html")
 def questions_answers():
     return render_template("questions-answers.html")
     
