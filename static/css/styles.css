@@ -197,7 +197,7 @@ footer {
 .project-box .render-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #4caf50 !important; /* Fresh Green */
+  background-color: #3581c4 !important; /* Medium Blue */
   color: white !important;
   text-decoration: none;
   font-weight: bold;
@@ -207,7 +207,7 @@ footer {
 }
 
 .project-box .render-button:hover {
-  background-color: #45a049; /* Slightly darker green on hover */
+  background-color: #5bc3f0; /* Slightly light blue on hover */
 }
 
 .project-box .render-button:visited {
@@ -218,7 +218,7 @@ footer {
 .project-box .github-button {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #ffb6c1 !important; /* Light pink */
+  background-color: #d1478d !important; /* Dark pink */
   color: white !important;
   text-decoration: none;
   border-radius: 20px;
@@ -228,7 +228,7 @@ footer {
 }
 
 .project-box .github-button:hover {
-  background-color: #d1478d !important;; /* Darker pink on hover */
+  background-color: #ffb6c1 !important;; /* Light pink on hover */
 }
 
 /* For visited states */
