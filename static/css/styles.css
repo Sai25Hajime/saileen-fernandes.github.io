@@ -207,7 +207,7 @@ footer {
 }
 
 .project-box .render-button:hover {
-  background-color: #68c8f7; /* Slightly light blue on hover */
+  background-color: #68c8f7 !important; /* Slightly light blue on hover */
 }
 
 .project-box .render-button:visited {
@@ -233,7 +233,7 @@ footer {
 
 /* For visited states */
 .project-box .github-button:visited {
-  color: #800080 !important;; /* Purple for visited */
+  color: white !important;; /* Purple for visited */
 }
 
 /* Dark mode adjustments */
@@ -247,7 +247,7 @@ footer {
 }
 
 .dark-mode .project-box .github-button:visited {
-  color: #b19cd9 !important;; /* Light purple for visited in dark mode */
+  color: white !important;; /* Light purple for visited in dark mode */
 }
 
 .project-box .render-button,
