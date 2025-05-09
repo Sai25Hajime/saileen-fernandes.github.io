@@ -27,7 +27,7 @@ I’m a final year Computer Engineering student with a passion for software deve
 Please refer to my repositories and my portfolio website for more details on these projects.
 
 ## 🎓 Education
-- **BE in Computer Engineering** - St. Francis Institute of Technology (July 2021 – May 2025)
+- **BE in Computer Engineering** - St. Francis Institute of Technology (Dec 2021 – May 2025)
 - **Higher Secondary Education (HSC)** - Nirmala Junior College of Commerce and Science (June 2019 – May 2021)
 - **Secondary School Education (SSC)** - Sardar Vallabhai Patel Vidyalaya (June 2009 – March 2019)
 
